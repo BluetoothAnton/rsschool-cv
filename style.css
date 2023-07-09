@@ -1,0 +1,21 @@
+.wreaper {
+    grid-gap: 1px;
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(9,100px); 
+}
+.wreaper > div {
+    background-color: black;
+}
+
+@media all and (max-width: 768px){
+    .wreaper {
+    grid-template-columns: repeat(12, 64px);
+    }
+}
+
+@media all and (max-width: 400px){
+    .wreaper {
+    grid-template-columns: repeat(12, 30px);  
+    }
+}
