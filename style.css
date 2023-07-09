@@ -1,11 +1,79 @@
-.wreaper {
+@font-face {
+    font-family: 'Lato';
+    src: url("assets/fonts/Lato-Regular.ttf");
+    font-weight: 300;
+}     
+  @font-face {
+    font-family: 'Lato';
+    src: url("assets/fonts/Lato-Light.ttf");
+    font-weight: 100;
+}     
+body {
+    color:#09ff00;
+    background-color:#000000 
+    
+}
+     
+article {
+    color:#809eff;
+    font-size: 150%;
+    font-family: 'Lato';
+    }
+header {
+    color:#ff0000;
+    font-size: 200%;
+    font-family: 'Lato';
+    font-weight: 300;
+    }
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+    
+p {
+    padding-right: 300px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Lato';
+    font-weight: 100;
+  }
+
+ul {
+    padding-left: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Lato';
+    font-weight: 100;
+  }
+
+ article {
+    padding-left: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+ }
+  hr { 
+    width: 1240px;
+    margin-right: 500px;
+  }
+ .line  {
+    border-top: 1px dashed #ffffff; 
+    height: 2px; 
+    margin-right: 500px;
+    width: 1240px;
+    padding-bottom: 10px;
+ }
+ .rightpic  {
+    float: right; 
+    margin: 7px 0 7px 7px;  
+   }
+ .wreaper {
     grid-gap: 1px;
     display: grid;
     grid-template-columns: repeat(12, 100px);
-    grid-template-rows: repeat(9,100px); 
+    grid-template-rows: repeat(9,20px); 
 }
 .wreaper > div {
-    background-color: black;
+    background-color: rgb(77, 77, 77);
 }
 
 @media all and (max-width: 768px){
@@ -14,8 +82,36 @@
     }
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 300px){
     .wreaper {
     grid-template-columns: repeat(12, 30px);  
     }
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color:#000000;
+}
+
+.nav-list {
+    font-family: 'Lato';
+    font-weight: 100;
+    color:#1eff00;
+    font-size: 50%;
+    transition: .3s;
+}
+.nav-item a {
+    color: #0059ff;
+    text-decoration: none;  
+    transition: color 0.5s;
+  }
+.nav-item a:hover {
+    color: #00ff2a;
+  }
+.footblock {
+    padding: 2px;
+    background-color: rgb(22, 155, 22);
+    border: 2px solid #5f5f5f
 }
