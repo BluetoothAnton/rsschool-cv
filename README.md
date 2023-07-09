@@ -1,1 +1,1 @@
-https://BluetoothAnton.github.io/rsschool-cv/cv
+https://BluetoothAnton.github.io/rsschool-cv/
